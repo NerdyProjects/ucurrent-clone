@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 21)
+    (drawings 23)
     (tracks 203)
     (zones 0)
     (modules 38)
@@ -1537,6 +1537,12 @@
     )
   )
 
+  (gr_text 2019-11-06 (at 119.634 41.5544) (layer B.SilkS) (tstamp 5DC4210B)
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
+  )
+  (gr_text https://github.com/NerdyProjects/ucurrent-clone (at 122.8344 70.7644 90) (layer B.SilkS) (tstamp 5DC42107)
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
+  )
   (gr_text "+/-\n0-1250 mV" (at 82.4992 66.5988) (layer F.SilkS) (tstamp 5DC41855)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
@@ -1797,7 +1803,7 @@
   (segment (start 105.7275 100.23) (end 105.7275 98.806) (width 2) (layer F.Cu) (net 23))
   (segment (start 106.9705 101.473) (end 105.7275 100.23) (width 2) (layer F.Cu) (net 23))
 
-  (zone (net 11) (net_name GNDREF) (layer B.Cu) (tstamp 5DC4204F) (hatch edge 0.508)
+  (zone (net 11) (net_name GNDREF) (layer B.Cu) (tstamp 5DC42101) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
