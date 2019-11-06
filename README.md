@@ -2,6 +2,8 @@
 
 This repository holds a clone of the ucurrent gold from https://www.eevblog.com/projects/ucurrent/
 
+![](board.png)
+
 ### Design changes
 * Reimplementation of design in kicad
 * exchanged switches for jumpers to reduce cost
