@@ -2,7 +2,8 @@
 
 This repository holds a clone of the ucurrent gold from https://www.eevblog.com/projects/ucurrent/
 
-![](board.png)
+![](board_top.png)
+![](board_bot.png)
 
 ### Design changes
 * Reimplementation of design in kicad
