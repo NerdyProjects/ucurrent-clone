@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ucurrent-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -856,4 +857,43 @@ Wire Wire Line
 Wire Wire Line
 	2600 2300 2600 2200
 Connection ~ 2600 2300
+$Comp
+L Device:LED_Small D2
+U 1 1 5DC44EE2
+P 2650 4500
+F 0 "D2" V 2696 4432 50  0000 R CNN
+F 1 "GREEN" V 2605 4432 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" V 2650 4500 50  0001 C CNN
+F 3 "~" V 2650 4500 50  0001 C CNN
+	1    2650 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 4650 2650 4650
+Wire Wire Line
+	2650 4650 2650 4600
+Wire Wire Line
+	2650 4400 2300 4400
+Connection ~ 2300 4400
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5DC4E816
+P 1400 4000
+F 0 "SW?" H 1400 3815 50  0000 C CNN
+F 1 "BAT_TEST" H 1400 3906 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 1400 4200 50  0001 C CNN
+F 3 "~" H 1400 4200 50  0001 C CNN
+	1    1400 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 4000 1200 3700
+Wire Wire Line
+	1200 3700 1300 3700
+Connection ~ 1300 3700
+Wire Wire Line
+	1600 4000 1600 3800
+Wire Wire Line
+	1600 3800 1800 3800
+Connection ~ 1800 3800
 $EndSCHEMATC
