@@ -61,4 +61,17 @@ The proposed sense resistors are:
 
 
 
+### Specs/Errata
+Current usage of other ucurrent clone at 2.7V: 1.004 mA (via Multimeter) or 1.04 mA (via ucurrent clone @ 1mV/µA).
+Unfortunately, there is a bunch of problems, which also seem to exist in the original ucurrent, but have different levels of manifestation.
+
+* Oscillations of reference voltage: Original ucurrent gold seems to be sensitive about the exact type of U2. I tried two versions and have not been successful. Placing 100nf each over R4 and from GNDREF to V- makes GNDREF stable. This can easily be done by soldering 100nf directly above R4 and another 100nf 1206 from R13 to R4.
+* Oscillations/feedback when using nA range: When operated in the nA range the output oscillates with 100kHz-1MHz. It looks like feedback is picked up in the first x10 stage and propagated to the output. Reducing bandwidth by placing 5nF from U3/pin3 (IN+) to GNDREF stops the feedback but reduces bandwidth to ~10 kHz.
+* Reduced bandwidth: Output voltage drops significantly above 100 Khz.
+
+Some scope shots, CH1 voltage over a 10 kOhm resistor, CH2 output voltage of ucurrent clone
+![100 kHz sine wave](images/100kHz_sine_10k.png)
+![125 kHz square wave](images/125kHz_square_10k.png)
+
+
 
