@@ -75,3 +75,7 @@ Some scope shots, CH1 voltage over a 10 kOhm resistor, CH2 output voltage of ucu
 
 
 
+### Case
+![Case](case/case.png)
+
+A draft for a 3d printable case is there as well. There is some space for a 2x AAA batteryholder below the PCB but it does not contain any mounting utilities for that.
